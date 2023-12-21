@@ -1,4 +1,4 @@
-# Requizitos
+# Requisitos
 utilizar el comando npm install una vez clonado el proyecto
 
 # React + Vite
