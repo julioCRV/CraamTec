@@ -1,3 +1,6 @@
+# Requizitos
+utilizar el comando npm install una vez clonado el proyecto
+
 # React + Vite
 
 This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
