@@ -1,0 +1,27 @@
+header{
+  margin: 0;
+  padding: 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+   
+  background-color: rgb(18, 32, 107); 
+  position: relative;   
+}
+ h1{
+  font-weight: 900;
+  color: aliceblue;
+  font-size: 40px;
+  margin: 0;
+  padding: 15px;
+  letter-spacing: 1.5px;
+  
+}
+img{
+ border-radius: 50%;  
+  width: 100px;
+  height: 80px; 
+  position: absolute;
+  top: 10px;
+  left: 10px;
+}
