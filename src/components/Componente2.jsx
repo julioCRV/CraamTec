@@ -1,6 +1,6 @@
 import React from 'react'
 import './Componente2.css'
-import cuento from './img/cuento.jpg'
+import cuento from '../assets/cuento.jpg'
 export default function Componente2() {
   return (
     <div>
