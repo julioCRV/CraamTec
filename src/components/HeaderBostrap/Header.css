@@ -1,0 +1,45 @@
+/* Estilos para hacer la barra de navegación */
+
+
+@font-face {
+  font-family: 'CentraMedium';
+  src: url('./assets/font/CentraNo2-Medium.ttf');
+  font-weight: 500;
+}
+
+@font-face {
+  font-family: 'CentraBook';
+  src: url('./assets/font/CentraNo2-Book.ttf');
+  font-weight: 400;
+}
+  .navbar-nav {
+    margin-left: auto;
+  }
+
+  .navbar-brand {
+    color: #e2e2e2; 
+    font-weight: bold;
+    margin-right: 20px; 
+  }
+  
+  .navbar-nav .nav-link {
+    color: #19b97c !important; 
+    margin-right: 15px;  
+    font-weight: bold;
+    font-family: 'CentraMedium', sans-serif;
+}
+  
+  .navbar-nav .nav-link.active {
+    color: #e8f1ef !important; 
+  }
+  
+
+  .container {
+    margin-top: 15px; 
+  }
+  
+  
+  .navbar-toggler{
+    background-color: #e8f1ef
+  }
+ 

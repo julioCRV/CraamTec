@@ -1,0 +1,26 @@
+
+
+.banner {
+    background-color:transparent; 
+    padding: 40px 0; 
+  }
+  
+  .vision-box, .mision-box {
+    background-color: rgba(170, 255, 255, 0.7); 
+  padding: 20px; 
+  margin-bottom: 20px; 
+  border: 1px solid #031214; 
+  border-radius: 8px; 
+  
+  }
+  
+  .vision-box h2, .mision-box h2 {
+    color: #0b9159; 
+  }
+  
+  .vision-box p, .mision-box p {
+    color: #040507; 
+  }
+  
+  
+  
