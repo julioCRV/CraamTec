@@ -1,12 +1,11 @@
-import Reac, {useState} from 'react'; 
 import {Routes, Route} from 'react-router-dom';
 
-import Inicio from '../components/Header/Inicio/Inicio';
-import Eventos from '../components/Header/Eventos/Eventos';
-import Competencias from '../components/Header/Competencias/Competencias';
-import Integrantes from '../components/Header/Integrantes/Integrantes';
-import Colaboradores from '../components/Header/Colaboradores/Colaboradores';
-import Servicios from '../components/Header/Servicios/Servicios';
+import Inicio from '../components/HeaderSecciones/Inicio/Inicio';
+import Eventos from '../components/HeaderSecciones/Eventos/Eventos';
+import Competencias from '../components/HeaderSecciones/Competencias/Competencias';
+import Integrantes from '../components/HeaderSecciones/Integrantes/Integrantes';
+import Colaboradores from '../components/HeaderSecciones/Colaboradores/Colaboradores';
+import Servicios from '../components/HeaderSecciones/Servicios/Servicios';
 
 function Router() {
     return (

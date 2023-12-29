@@ -1,7 +1,7 @@
 import React from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './Header.css';
-import { Button, Navbar, Nav, Container } from 'react-bootstrap';
+import { Navbar, Nav, Container } from 'react-bootstrap';
 import { NavLink } from 'react-router-dom';
 
 import Routes from '../../routes/Routes';
