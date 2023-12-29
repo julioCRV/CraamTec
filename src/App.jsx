@@ -5,12 +5,16 @@ import Header from './components/HeaderBostrap/HeaderBostrap'
 import Footer from './components/Footer/Footer'
 
 function App() {
+
+ 
+
   return (
     <Router>
       <div>
         <Header/>
         <Footer/>
       </div>
+     
     </Router>
   );
 }

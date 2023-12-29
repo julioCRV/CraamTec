@@ -27,13 +27,11 @@ html {
 }
 
 body {
-  font-weight: 400;
-  overflow-x: hidden;
-  position: relative;
-  background: url('./assets/898.jpg') no-repeat center center fixed !important;
-  color: #fff !important;
-  font-family: 'Centra', sans-serif !important;
+  color: #fae3e3;
+    background-color: #e20303 ;
+    font-family: 'Poppins',sans-serif;
 }
+
 
 h1, h2, h3, h4, h5, h6 {
   margin: 0;
