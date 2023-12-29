@@ -38,7 +38,7 @@ function App() {
               </Nav.Item>
               <Nav.Item>
                 <NavLink className="nav-link" activeClassName="active" to="/competencias">
-                  Competencias
+                  Participaciones
                 </NavLink>
               </Nav.Item>
               <Nav.Item>
@@ -46,11 +46,7 @@ function App() {
                   Integrantes
                 </NavLink>
               </Nav.Item>
-              <Nav.Item>
-                <NavLink className="nav-link" activeClassName="active" to="/colaboradores">
-                  Colaboradores
-                </NavLink>
-              </Nav.Item>
+            
               <Nav.Item>
                 <NavLink className="nav-link" activeClassName="active" to="/servicios">
                   Servicios
