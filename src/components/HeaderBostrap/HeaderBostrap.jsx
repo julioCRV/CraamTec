@@ -3,15 +3,26 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import './Header.css';
 import { Button, Navbar, Nav, Container } from 'react-bootstrap';
 import { NavLink } from 'react-router-dom';
+import logoImage from '../../assets/LOG.png';
+
+
 
 import Routes from '../../routes/Routes';
 
 function App() {
+
   return (
-    <divc>
+    <div className="header-container">
       <Navbar expand="lg" bg="dark" variant="light" sticky="top" >
         <Container>
-          <Navbar.Brand href="/">Tu Logo</Navbar.Brand>
+          <Navbar.Brand href="/">
+          <img
+           src={logoImage}
+           width="10"
+           height="10"
+           className="d-inline-block align-top"
+           alt="Tu Logo"/>
+          </Navbar.Brand>
           <Navbar.Toggle aria-controls="navbarNav" />
           <Navbar.Collapse id="navbarNav">
             <Nav className="ml-auto">
@@ -53,7 +64,7 @@ function App() {
         <Routes />
       </Container>
       
-    </divc>
+    </div>
   );
 }
 
