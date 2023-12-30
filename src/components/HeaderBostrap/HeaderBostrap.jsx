@@ -15,11 +15,10 @@ function App() {
     <div className="header-container">
       <Navbar expand="lg" bg="dark" variant="light" sticky="top" >
         <Container>
-          <Navbar.Brand href="/">
+          <Navbar.Brand >
           <img
            src={logoImage}
-           width="10"
-           height="10"
+           
            className="d-inline-block align-top"
            alt="Tu Logo"/>
           </Navbar.Brand>
@@ -27,28 +26,28 @@ function App() {
           <Navbar.Collapse id="navbarNav">
             <Nav className="ml-auto">
               <Nav.Item>
-                <NavLink className="nav-link" activeClassName="active" to="/inicio">
+                <NavLink className="nav-link"  to="/inicio">
                   Inicio
                 </NavLink>
               </Nav.Item>
               <Nav.Item>
-                <NavLink className="nav-link" activeClassName="active" to="/eventos">
+                <NavLink className="nav-link"  to="/eventos">
                   Eventos
                 </NavLink>
               </Nav.Item>
               <Nav.Item>
-                <NavLink className="nav-link" activeClassName="active" to="/competencias">
+                <NavLink className="nav-link"  to="/competencias">
                   Participaciones
                 </NavLink>
               </Nav.Item>
               <Nav.Item>
-                <NavLink className="nav-link" activeClassName="active" to="/integrantes">
+                <NavLink className="nav-link"  to="/integrantes">
                   Integrantes
                 </NavLink>
               </Nav.Item>
             
               <Nav.Item>
-                <NavLink className="nav-link" activeClassName="active" to="/servicios">
+                <NavLink className="nav-link"  to="/servicios">
                   Servicios
                 </NavLink>
               </Nav.Item>

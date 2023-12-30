@@ -1,28 +1,24 @@
 .app-container {
-    position: fixed;
-    bottom: 0;
-    width: 100%;
-    background-color: #333;
-    color: #fff;
-    padding: 10px;
-    text-align: center;
-  }
-  
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+}
 
-  .content {
-    flex: 1;
-    padding: 20px;
-    /* Otros estilos para el contenido principal */
-  }
+.footer {
+  background: linear-gradient(to right, rgba(6, 62, 100, 0.8), rgba(3, 34, 30, 0.8)); /* Usa rgba para agregar transparencia */
+ 
+ border-radius: 5px;
+/* Cambia los colores del degradado según tus preferencias */
+  color: #fff;
+  padding: 20px;
+  text-align: center;
+  /* Añade un borde superior */
   
-  .footer {
-    background-color: #333;
-    color: #fff;
-    padding: 10px;
-    text-align: center;
-  }
-  
-  .txt {
-    position: relative;
-    top: 10px;
-  }
+}
+
+.txt {
+  position: relative;
+  top: 10px;
+  font-size: 16px; /* Ajusta el tamaño de la fuente según tus necesidades */
+  font-weight: bold;
+}
