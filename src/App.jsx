@@ -10,11 +10,9 @@ function App() {
 
   return (
     <Router>
-      <div>
+      <div className='App'></div>
         <Header/>
-        <Footer/>
-      </div>
-     
+        <Footer/>       
     </Router>
   );
 }
