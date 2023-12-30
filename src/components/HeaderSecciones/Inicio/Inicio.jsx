@@ -1,6 +1,6 @@
 import React from 'react';
 import { Container, Row, Col } from "react-bootstrap";
-import './inicio.css'
+import './inicio.css';
 import Card from 'react-bootstrap/Card';
 import Button from 'react-bootstrap/Button';
 import Badge from 'react-bootstrap/Badge';
@@ -19,7 +19,8 @@ function Inicio() {
                        <p>Dejanos guiarte por la mejor experiencia , todo al alcance de un click</p>
                        
                        <Button class="custom-button" >
-                       <span>Contactanos</span>
+                       <span>Contactanos lll</span>
+                       
                                 <i></i>
                        </Button>
                  </div>
