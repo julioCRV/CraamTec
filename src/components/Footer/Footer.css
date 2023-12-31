@@ -1,7 +1,7 @@
 .app-container {
   
     position: absolute;
-    margin-bottom: -50px;
+  
     margin-top: 50px;
     bottom: 0;
     width: 100%;
@@ -19,7 +19,7 @@
  border-radius: 5px;
 /* Cambia los colores del degradado según tus preferencias */
   color: #fff;
-  padding: 20px;
+  padding: 10px;
   text-align: center;
   /* Añade un borde superior */
   
@@ -31,3 +31,4 @@
   font-size: 16px; /* Ajusta el tamaño de la fuente según tus necesidades */
   font-weight: bold;
 }
+

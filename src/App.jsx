@@ -5,14 +5,12 @@ import Header from './components/HeaderBostrap/HeaderBostrap'
 import Footer from './components/Footer/Footer'
 
 function App() {
-
- 
-
   return (
     <Router>
-      <div className='App'></div>
-        <Header/>
-        <Footer/>       
+      <div className='App'>
+      <Header/>
+      <Footer/>
+      </div>
     </Router>
   );
 }
