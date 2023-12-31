@@ -1,9 +1,34 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
+import axios from "axios";
+import "./Participaciones.css";
 
 function Competencias() {
+
+  const [datos, setDatos] = useState([]);
+
+  const fetchData = async () => {
+    try {
+      const response = await axios.get('https://craamtec-web.onrender.com/shares/api/shares/participacionTotales/');
+      setDatos(response.data);
+    } catch (error) {
+      console.error('Error al obtener los datos: ', error);
+    }
+  };
+
+  useEffect(() => {
+    fetchData();
+  }, []);
+
   return (
-    <h1>add mas diseño a Competencias</h1>
+    <div className="Participaciones">
+      {datos.length > 0 ? (
+        <p>{datos[0].nombre_par}</p>
+      ) : (
+        <p>Cargando datos...</p>
+      )}
+    </div>
   );
 }
+
 
 export default Competencias;
