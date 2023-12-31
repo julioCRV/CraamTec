@@ -54,7 +54,7 @@
     
   }
   .navbar-brand img {
-    width: 85px; 
+    width: 200px; 
     height: auto; 
     /*filter: drop-shadow(5px 5px 10px #64adec);*/
   }
@@ -62,8 +62,8 @@
     color: #00abf0 !important; 
     margin-right: 15px;  
     font-weight: bold;
-    font-family: 'Rancho', sans-serif ;
-    font-size: 20px; /* Ajusta el tamaño de la fuente según tus necesidades */
+    font-family: 'Oswald', sans-serif; /* Cambia 'Oswald' por la fuente que desees */
+    font-size: 20px;/* Ajusta el tamaño de la fuente según tus necesidades */
     transition: color 0.3s ease; 
     
 }
