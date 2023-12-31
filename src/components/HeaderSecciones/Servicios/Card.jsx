@@ -13,8 +13,9 @@ function Card({ imagen , titulo, descripcion, trabajos, celular}) {
       : "0 2px 10px rgb(0 0 0 / 8%)"
   });
   return (
+    <div  className={Styles.container}>
     <animated.div
-      className={Styles.card}
+       className={Styles.card}
       style={props3}
       onMouseEnter={() => setShown(true)}
       onMouseLeave={() => setShown(false)}
@@ -34,6 +35,7 @@ function Card({ imagen , titulo, descripcion, trabajos, celular}) {
         <Button text="CONTACTANOS" />
       </div>
     </animated.div>
+  </div>
   );
 }
 
