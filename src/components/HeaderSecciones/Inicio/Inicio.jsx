@@ -4,7 +4,7 @@ import './Inicio.css';
 import Card from 'react-bootstrap/Card';
 import Button from 'react-bootstrap/Button';
 import Badge from 'react-bootstrap/Badge';
-
+/*apñiquecambios aqui */ 
 function Inicio() {
   return (
     <section className="banner" id="home">
@@ -19,6 +19,7 @@ function Inicio() {
                        <p>Dejanos guiarte por la mejor experiencia , todo al alcance de un click</p>
                        <Button className="custom-button" >
                        <span>Contactanos</span>
+                       <i></i>
                        </Button>
                  </div>
                </div>

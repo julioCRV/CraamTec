@@ -32,31 +32,12 @@ function Servicios() {
   }
 
   return (
-    <div className="Servicios">
+    <div className="">
       <Carousel
-        cards={datos.map((dato) => ({
-          key: uuidv4(),
-          content: <Card imagen={`https://drive.google.com/uc?id=${dato.imagen_ser}`} 
-          titulo={dato.nombre_ser} 
-          descripcion={dato.descripcion_ser} 
-
-          trabajos={<div>
-            {dato.trabajos.map((trabajo) => (
-              <div key={trabajo.id}>
-                <p>- {trabajo.nombre_tra}</p>
-              </div>
-            ))}
-          </div>}
-
-          celular={<div>
-            <div key={dato.celular.id}>
-              <p>{dato.celular.numero_cel}</p>
-            </div>
-          </div>}
-          />,
-        }))}
-        width="75%"
-        margin="0px auto"
+        cards={cards}
+        height="500px"
+        width="30%"
+        margin="0 auto"
         offset={2}
         showArrows={false}
       />
@@ -65,3 +46,4 @@ function Servicios() {
 }
 
 export default Servicios;
+
