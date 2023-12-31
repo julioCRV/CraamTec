@@ -2,6 +2,7 @@ import React from 'react';
 import './Footer.css'; // Importa el archivo de estilos CSS
 
 const App = () => {
+  
   return (
     <div className="app-container">
       <footer className="footer">
