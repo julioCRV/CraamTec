@@ -43,7 +43,7 @@ function Servicios() {
           trabajos={<div>
             {dato.trabajos.map((trabajo) => (
               <div key={trabajo.id}>
-                <p>- {trabajo.nombre_tra}</p>
+                <p>{trabajo.nombre_tra}</p>
               </div>
             ))}
           </div>}
