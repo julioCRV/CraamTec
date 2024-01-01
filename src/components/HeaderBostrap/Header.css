@@ -12,20 +12,16 @@
 }
 
 .header-container {
-  
-  position: fixed;
-
+  position: relative;
   top: 0;
   left: 0;
   width: 100vw;
   height: 100vh;
   background: linear-gradient(to right, #0a1c2c, #172c3f, #32475b), url('../../assets/5053309.jpg');
   background-size: cover;
-  background-blend-mode: overlay; /* Ajusta el modo de mezcla según tus preferencias */
-
-
-
+  background-blend-mode: overlay; 
 }
+
 .navbar {
   background-color: transparent !important;
   position: relative;
