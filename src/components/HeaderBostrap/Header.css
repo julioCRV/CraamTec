@@ -1,6 +1,6 @@
 /* Estilos para hacer la barra de navegación */
 /* src/styles/HeaderBostrap.css */
-*{
+* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -9,17 +9,6 @@
   scroll-behavior: smooth;
   font-family: 'Lato', sans-serif;
   font-family: 'Poppins', sans-serif;
-}
-
-.header-container {
-  position: relative;
-  top: 0;
-  left: 0;
-  width: 100vw;
-  height: 100vh;
-  background: linear-gradient(to right, #0a1c2c, #172c3f, #32475b), url('../../assets/5053309.jpg');
-  background-size: cover;
-  background-blend-mode: overlay; 
 }
 
 .navbar {
@@ -33,68 +22,60 @@
   object-fit: cover;
   align-items: center;
   z-index: 2000;
-
 }
 
 
-  .navbar-nav {
-    margin-left: auto;
-    
-  }
+.navbar-nav {
+  margin-left: auto;
 
-  .navbar-brand {
-    color: #e2e2e2; 
-    font-weight: bold;
-    margin-right:auto;
-   
-    
-  }
-  .navbar-brand img {
-    width: 200px; 
-    height: auto; 
-    /*filter: drop-shadow(5px 5px 10px #64adec);*/
-  }
-  .navbar-nav .nav-link {
-    color: #00abf0 !important; 
-    margin-right: 15px;  
-    font-weight: bold;
-    font-family: 'Oswald', sans-serif; /* Cambia 'Oswald' por la fuente que desees */
-    font-size: 20px;/* Ajusta el tamaño de la fuente según tus necesidades */
-    transition: color 0.3s ease; 
-    
 }
-.nav-item .nav-link:hover{
-  
+
+.navbar-brand {
+  color: #e2e2e2;
+  font-weight: bold;
+  margin-right: auto;
+}
+
+.navbar-brand img {
+  width: 200px;
+  height: auto;
+  /*filter: drop-shadow(5px 5px 10px #64adec);*/
+}
+
+.navbar-nav .nav-link {
+  color: #00abf0 !important;
+  margin-right: 15px;
+  font-weight: bold;
+  font-family: 'Oswald', sans-serif;
+  /* Cambia 'Oswald' por la fuente que desees */
+  font-size: 20px;
+  /* Ajusta el tamaño de la fuente según tus necesidades */
+  transition: color 0.3s ease;
+
+}
+
+.nav-item .nav-link:hover {
   border-radius: 3px;
   transition: 1s ease;
   letter-spacing: 1px;
   text-shadow: 0 0 25px rgb(102, 240, 240);
   color: #e8f1ef !important;
   border-bottom: 2px solid rgba(255, 255, 255, 1);
-    
-
-
 }
-  .navbar-nav .nav-link.active {
-    color: #e8f1ef !important; 
-  }
-  
 
+.navbar-nav .nav-link.active {
+  color: #e8f1ef !important;
+}
 
+.container {
+  margin-top: 9px;
+}
 
+.navbar-toggler {
+  background-color: #e8f1ef
+}
 
-  
-
-  .container {
-    margin-top: 9px; 
-  }
-  
-  
-  .navbar-toggler{
-    background-color: #e8f1ef
-  }
-  body{
-    background-color: #64adec;
-    margin: 0;
-  }
- 
+body {
+  background-color: #64adec;
+  margin: 0;
+}
