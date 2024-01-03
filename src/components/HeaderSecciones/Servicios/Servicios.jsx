@@ -38,12 +38,7 @@ function Servicios() {
               </div>
             ))}
           </div>}
-
-              celular={<div>
-                <div key={dato.celular.id}>
-                  <p>{dato.celular.numero_cel}</p>
-                </div>
-              </div>}
+              celular={`https://wa.me/591${dato.celular.numero_cel}`}
             />,
           }))}
           width="75%"
