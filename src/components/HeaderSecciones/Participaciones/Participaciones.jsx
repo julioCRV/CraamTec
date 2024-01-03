@@ -27,13 +27,14 @@ function Competencias() {
           {datos.map((evento) => (
             <div key={evento.id} className="card mb-3">
               <div className="row g-0">
-                <div className="col-md-4">
+                <div className="col-md-4 d-flex align-items-center justify-content-center">
                   <img
                     src={`https://drive.google.com/uc?id=${evento.foto_par}`}
                     alt={evento.nombre_par}
                     className="img-fluid rounded-start"
                   />
                 </div>
+
                 <div className="col-md-8">
                   <div className="card-body">
                     <h5 className="card-title">{evento.nombre_par}</h5>

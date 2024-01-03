@@ -15,13 +15,15 @@ function App() {
     <div className="header-container">
       <Navbar expand="lg" bg="dark" variant="light" sticky="top" >
         <Container>
-          <Navbar.Brand >
+          {/* <Navbar.Brand >
             <img
               src={logoImage}
-
               className="d-inline-block align-top"
-              alt="Tu Logo" />
-          </Navbar.Brand>
+              alt="Tu Logo"
+              loading="lazy"
+            />
+
+          </Navbar.Brand> */}
           <Navbar.Toggle aria-controls="navbarNav" />
           <Navbar.Collapse id="navbarNav">
             <Nav className="ml-auto">
@@ -36,7 +38,7 @@ function App() {
                 </NavLink>
               </Nav.Item>
               <Nav.Item>
-                <NavLink className="nav-link" to="/competencias">
+                <NavLink className="nav-link" to="/participaciones">
                   Participaciones
                 </NavLink>
               </Nav.Item>

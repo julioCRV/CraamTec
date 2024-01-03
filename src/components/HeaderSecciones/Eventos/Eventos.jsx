@@ -2,36 +2,6 @@ import React, { useState, useEffect } from 'react';
 import Card from './Card';
 import axios from 'axios';
 
-const cardData = [
-  {
-    title: 'Card 1',
-    description: 'Description for Card 1',
-    imageUrl: 'https://placekitten.com/300/200', // Ejemplo de imagen
-  },
-  {
-    title: 'Card 2',
-    description: 'Description for Card 2',
-    imageUrl: 'https://placekitten.com/300/201', // Ejemplo de imagen
-  },
-  {
-    title: 'Card 2',
-    description: 'Description for Card 2',
-    imageUrl: 'https://placekitten.com/300/201', // Ejemplo de imagen
-  },
-  {
-    title: 'Card 2',
-    description: 'Description for Card 2',
-    imageUrl: 'https://placekitten.com/300/201', // Ejemplo de imagen
-  },
-  {
-    title: 'Card 2',
-    description: 'Description for Card 2',
-    imageUrl: 'https://placekitten.com/300/201', // Ejemplo de imagen
-  },
-
-  // Agrega más objetos al array según sea necesario
-];
-
 function Eventos() {
   const [datos, setDatos] = useState([]);
 

@@ -17,10 +17,6 @@ function Inicio() {
                 <h5>Bienvenidos</h5>
                 <h1>Somos <span class="changecontent"></span></h1>
                 <p>Dejanos guiarte por la mejor experiencia , todo al alcance de un click</p>
-                <Button className="custom-button" >
-                  <span>Contactanos</span>
-                  <i></i>
-                </Button>
               </div>
             </div>
           </Col>

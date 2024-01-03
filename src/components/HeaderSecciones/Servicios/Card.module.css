@@ -12,89 +12,115 @@
 .card {
   display: flex;
   flex-direction: column;
-  justify-content: space-between; 
-  background-color: rgba(17, 25, 40, 0.25);
+  justify-content: space-between;
+  background-color: #323d42;
   border-radius: 12px;
   border: 1px solid rgba(255, 255, 255, 0.125);
   /*padding: 38px;*/
-  filter: drop-shadow(0 30px 10px rgba(0, 0, 0, 0.125));
+
   text-align: center;
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-  width: 22rem; /* Ajusta el valor según tus necesidades */
+
+  width: 22rem;
+  /* Ajusta el valor según tus necesidades */
   height: auto;
   padding: 4%;
 }
 
-  img {
-    width: 80%;
-  max-height: 10vw; /* Establece la altura máxima que desees */
-  object-fit: cover; /* Hace que la imagen cubra el contenedor manteniendo la relación de aspecto */
-  border-radius: 9px;
-  margin: auto; /* Centra horizontalmente */
-  display: block
-  }
-
-  h2 {
-    font-family: 'Righteous', sans-serif;
-    color: rgba(255, 255, 255, 0.98);
-    text-transform: uppercase;
-    font-size: 0.9rem;
-    margin: 0;
-    margin-top: 0.2rem;
-  }
-
-   h3{
-    font-size: 0.9rem;
-    margin: 0;
-    margin-top: 0.2rem;
-    color: #00ffcc; 
-   }
-
-  p {
-    color: #fff;
-    font-family: 'Lato', sans-serif;
+@media (min-width:250px) and (max-width: 1025px) {
+  .card {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: rgba(17, 25, 40, 0.25);
+    border-radius: 12px;
+    border: 1px solid rgba(255, 255, 255, 0.125);
+    /*padding: 38px;*/
+    filter: drop-shadow(0 30px 10px rgba(0, 0, 0, 0.125));
     text-align: center;
-    font-size: 0.6rem;
-    line-height: 150%;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    width: 14rem;
+    /* Ajusta el valor según tus necesidades */
+    height: auto;
+    padding: 4%;
+  }
+}
+
+
+img {
+  width: 92%;
+  max-height: 10vw;
+  /* Establece la altura máxima que desees */
+  object-fit: cover;
+  /* Hace que la imagen cubra el contenedor manteniendo la relación de aspecto */
+  border-radius: 9px;
+  margin: auto;
+  display: block
+}
+
+h2 {
+  font-family: 'Righteous', sans-serif;
+  color: rgba(255, 255, 255, 0.98);
+  text-transform: uppercase;
+  font-size: 0.9rem;
+  margin: 0;
+  margin-top: 1.5rem;
+}
+
+h3 {
+  font-size: 0.9rem;
+  margin: 0;
+  margin-top: 0.2rem;
+  color: #00ffcc;
+}
+
+p {
+  color: #fff;
+  font-family: 'Lato', sans-serif;
+  text-align: center;
+  font-size: 0.6rem;
+  line-height: 150%;
+  letter-spacing: 2px;
+  text-transform: lowercase;
+  margin: 0;
+  margin-top: 0.2rem;
+  margin-bottom: 1rem;
+}
+
+.btnn {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  /* Alinea los botones verticalmente dentro del contenedor */
+  align-items: center;
+
+  button {
+    border: none;
+    padding: 12px 24px;
+    border-radius: 24px;
+    font-size: 0.8rem;
     letter-spacing: 2px;
-    text-transform: uppercase;
-    margin: 0;
-    margin-top: 0.2rem;
-    margin-bottom: 1rem;
-  }
+    cursor: pointer;
+    transition: all 0.3s ease;
+    align-items: center;
 
-  .btnn {
-      display: flex;
-      flex-direction: column;
-      justify-content: center; /* Alinea los botones verticalmente dentro del contenedor */
-      align-items: center;
-      button {
-      border: none;
-      padding: 12px 24px;
-      border-radius: 24px;
-      font-size: 0.8rem;
-      letter-spacing: 2px;
-      cursor: pointer;
-      transition: all 0.3s ease;
-      align-items: center;
-      &:hover {
-        transform: scale(1.125);
-      }
-    }
-
-    .outline {
-      background: transparent;
-      color: rgba(0, 212, 255, 0.9);
-      border: 1px solid rgba(0, 212, 255, 0.6);
-    }
-
-    .fill {
-      background: rgba(0, 212, 255, 0.9);
-      color: rgba(255, 255, 255, 0.95);
-      filter: drop-shadow(0);
-      font-weight: bold;
+    &:hover {
+      transform: scale(1.125);
     }
   }
+
+  .outline {
+    background: transparent;
+    color: rgba(0, 212, 255, 0.9);
+    border: 1px solid rgba(0, 212, 255, 0.6);
+  }
+
+  .fill {
+    background: rgba(0, 212, 255, 0.9);
+    color: rgba(255, 255, 255, 0.95);
+    filter: drop-shadow(0);
+    font-weight: bold;
+  }
+}
 
 
 /*solo es una prueba*/
@@ -103,7 +129,7 @@
   width: var(--container-width);
   height: var(--container-height);
   padding: 3px;
-  position:absolute;
+  position: absolute;
   border-radius: 6px;
   justify-content: center;
   align-items: center;
@@ -112,30 +138,33 @@
   font-size: 1.5em;
   color: rgb(88 199 250 / 0%);
   font-family: cursive;
-  
+
 }
+
 .container:hover {
   color: rgb(88 199 250 / 100%);
   transition: color 1s;
 }
-.container:hover:before, .container:hover:after {
+
+.container:hover:before,
+.container:hover:after {
   animation: none;
   opacity: 0;
 }
+
 .container::before {
   content: "";
   width: 104%;
   height: 102%;
   border-radius: 8px;
-  background-image: linear-gradient(
-    var(--rotate)
-    , #3498db, #2ecc71 43%, #e74c3c);
-    position: absolute;
-    z-index: -1;
-    top: -1%;
-    left: -2%;
-    animation: spin 2.5s linear infinite;
+  background-image: linear-gradient(var(--rotate), #3498db, #2ecc71 43%, #e74c3c);
+  position: absolute;
+  z-index: -1;
+  top: -1%;
+  left: -2%;
+  animation: spin 2.5s linear infinite;
 }
+
 .container::after {
   position: absolute;
   content: "";
@@ -148,17 +177,18 @@
   margin: 0 auto;
   transform: scale(0.8);
   filter: blur(calc(var(--container-height) / 6));
-  background-image: linear-gradient(
-    var(--rotate)
-    , #3498db, #2ecc71 43%, #e74c3c);/*color por definir solo es visul*/
-    opacity: 1;
+  background-image: linear-gradient(var(--rotate), #3498db, #2ecc71 43%, #e74c3c);
+  /*color por definir solo es visul*/
+  opacity: 1;
   transition: opacity .5s;
   animation: spin 2.5s linear infinite;
 }
+
 @keyframes spin {
   0% {
     --rotate: 0deg;
   }
+
   100% {
     --rotate: 360deg;
   }

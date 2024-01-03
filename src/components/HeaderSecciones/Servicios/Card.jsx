@@ -27,10 +27,11 @@ function Card({ imagen, titulo, descripcion, trabajos, celular }) {
         <h3>Trabajos:</h3>
         <p>{trabajos}</p>
 
-        <h3>Celular:</h3>
-        <p>{celular}</p>
         <div className={Styles.btnn}>
-          <Button>CONTACTANOS</Button>
+          <Button className="custom-button" >
+            <span>Contactanos</span>
+            <i></i>
+          </Button>
         </div>
       </animated.div>
     </div>
