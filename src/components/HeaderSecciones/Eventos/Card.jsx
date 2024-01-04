@@ -24,15 +24,15 @@ const Card = ({ titulo, fecha, enlaceI, enlaceC, imagen, descripcion, participan
       return <img src={skype} alt='Logo de la plataforma' />
     }
   }
-  
+
   return (
     <div className="card">
-      <div  className="deslizante">
+      <div className="deslizante">
         <img src={imagen} className="card-imagen" alt={titulo} />
         <div className="card-body">
           <div className="card-titulo">{titulo}</div>
           <div className="card-descripcion">{descripcion}</div>
-          
+
           <div className="card-fecha">
             <div className='card-subtitulo'>Fecha:</div>
             <div className='card-texto-centrar'>
@@ -51,8 +51,15 @@ const Card = ({ titulo, fecha, enlaceI, enlaceC, imagen, descripcion, participan
           )}
           <div className="card-text"><div className='card-subtitulo'>Tipo de Eventos:</div> <div className='card-texto-centrar'>{tipo}</div></div>
           <div className="card-text"><div className='card-subtitulo'>Modalidad:</div> <div className='card-texto-centrar'>{modalidad}</div></div>
+
           {modalidad === 'Presencial' ? (
-            <div className="card-text"><div className='card-subtitulo'>Ubicación:</div> <a href={ubicacion} target="_blank" rel="noopener noreferrer"> {enlaceC}</a> </div>
+            <div className="card-enlace">
+              <div className='card-subtitulo'>Ubicación:</div>
+
+
+              <i className="bi bi-link-45deg" style={{ fontSize: '14px', marginRight: '4px', color: 'red ' }}></i>
+              <a href={ubicacion} target="_blank" rel="noopener noreferrer">{ubicacion}</a>
+            </div>
           ) : (
             <div className="card-text">
               <div className='card-subtitulo'>Plataformas:</div>
@@ -73,7 +80,10 @@ const Card = ({ titulo, fecha, enlaceI, enlaceC, imagen, descripcion, participan
             </div>
           )}
           {(getFecha > fecha) &&
-            <div className="card-text"><div className='card-subtitulo'>Participantes:</div> <div className='card-texto-centrar'>{participantes}</div></div>
+            <div className="card-text">
+              <div className='card-subtitulo'>Participantes:</div>
+              <div className='card-texto-centrar'>{participantes}</div>
+            </div>
           }
         </div>
       </div>

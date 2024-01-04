@@ -27,8 +27,8 @@ function Eventos() {
             <Card titulo={dato.nombre_eve}
               fecha={dato.fecha_eve}
               // enlaceI={dato.enlace_inscripcion_eve}
-              enlaceI={`https://${dato.enlace_inscripcion_eve}`}
-              enlaceC={`https://${dato.enlace_chat_eve}`}
+              enlaceI={`${dato.enlace_inscripcion_eve}`}
+              enlaceC={`${dato.enlace_chat_eve}`}
               imagen={`https://drive.google.com/uc?id=${dato.foto_eve}`}
               descripcion={dato.descripcion_eve}
               participantes={dato.total_participantes_eve}
@@ -40,8 +40,7 @@ function Eventos() {
                 {dato.ubicaciones.map((ubi) => (
                   <div key={ubi.id}>
                     {ubi.nombre_ubi}
-
-                    {ubi.direccion_ubi}
+                    {/* {ubi.direccion_ubi} */}
                   </div>
                 ))}
               </div>}
