@@ -10,7 +10,7 @@ import skype from '../../../assets/skype.png';
 const Card = ({ titulo, fecha, enlaceI, enlaceC, imagen, descripcion, participantes, modalidad, tipo, plataforma, ubicacion }) => {
 
   const [getFecha, setFecha] = useState(new Date().toISOString().split('T')[0]);
-
+  
   const addImagen = ({ nombrePlataforma }) => {
     if (nombrePlataforma == 'YouTube') {
       return <img src={youtube} alt="Logo de la plataforma" className='plataforma-imagen' />
@@ -65,16 +65,15 @@ const Card = ({ titulo, fecha, enlaceI, enlaceC, imagen, descripcion, participan
               <div className='card-subtitulo'>Plataformas:</div>
               <div className='card-texto-centrar'>
 
-                <div style={{ display: 'flex' }}>
-                  {plataforma &&
-                    plataforma.map((nombrePlataforma, index) => (
-                      <div key={index} style={{ width: '50%', margin: '1px' }}>
-                        <div>
-                          {addImagen({ nombrePlataforma })}
-                        </div>
-                      </div>
-                    ))}
-                </div>
+              <div style={{ display: 'flex', justifyContent: 'center', padding: '5px' }}>
+  {plataforma &&
+    plataforma.map((nombrePlataforma, index) => (
+      <div key={index} style={{ width: '50%' }}>
+        {addImagen({ nombrePlataforma })}
+      </div>
+    ))}
+</div>
+
 
 
 
