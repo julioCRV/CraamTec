@@ -1,0 +1,7 @@
+.recuadro-texto {
+    height: 100px; /* Establece la altura del recuadro según tus necesidades */
+    overflow-y: auto; /* Permite el desplazamiento vertical cuando el contenido es más grande que la altura */
+    border: 1px solid #ccc; /* Opcional: añade un borde para resaltar el recuadro */
+    padding: 10px; /* Opcional: añade un relleno al recuadro para mejorar la apariencia */
+  }
+  

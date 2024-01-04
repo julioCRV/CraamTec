@@ -9,6 +9,10 @@
   --container-width: calc(var(--container-height) / 1.5);
 }
 
+.textdescripcion {
+  font-size: 5rem;
+}
+
 .card {
   display: flex;
   flex-direction: column;
@@ -49,9 +53,7 @@
 img {
   width: 92%;
   max-height: 10vw;
-  /* Establece la altura máxima que desees */
   object-fit: cover;
-  /* Hace que la imagen cubra el contenedor manteniendo la relación de aspecto */
   border-radius: 9px;
   margin: auto;
   display: block
@@ -68,8 +70,7 @@ h2 {
 
 h3 {
   font-size: 0.9rem;
-  margin: 0;
-  margin-top: 0.2rem;
+  text-align: left;
   color: #00ffcc;
 }
 
@@ -80,7 +81,6 @@ p {
   font-size: 0.6rem;
   line-height: 150%;
   letter-spacing: 2px;
-  text-transform: lowercase;
   margin: 0;
   margin-top: 0.2rem;
   margin-bottom: 1rem;
@@ -93,7 +93,7 @@ p {
   /* Alinea los botones verticalmente dentro del contenedor */
   align-items: center;
 
-  button {
+  .button {
     border: none;
     padding: 12px 24px;
     border-radius: 24px;

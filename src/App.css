@@ -63,5 +63,5 @@ button {
   display: flex;
   flex-direction: column;
   min-height: 100vh; 
-  background-color: #00040f;
+  background: linear-gradient(to bottom, #00040f 0%, #001124 40%, #00223b 100%);
 }

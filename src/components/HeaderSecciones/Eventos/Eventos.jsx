@@ -18,7 +18,6 @@ function Eventos() {
     fetchData();
   }, []);
 
-  console.log(datos)
 
   return (
     <div className="container mt-5">
@@ -27,22 +26,16 @@ function Eventos() {
           <div className="col-md-4" key={dato.id}>
             <Card titulo={dato.nombre_eve}
               fecha={dato.fecha_eve}
-              enlaceI={dato.enlace_inscripcion_eve}
-              enlaceC={dato.enlace_chat_eve}
+              // enlaceI={dato.enlace_inscripcion_eve}
+              enlaceI={`https://${dato.enlace_inscripcion_eve}`}
+              enlaceC={`https://${dato.enlace_chat_eve}`}
               imagen={`https://drive.google.com/uc?id=${dato.foto_eve}`}
               descripcion={dato.descripcion_eve}
               participantes={dato.total_participantes_eve}
               modalidad={dato.modalidad_eve}
               tipo={dato.tipo_evento_eve}
 
-              plataforma={<div>
-                {dato.plataformas.map((plataforma) => (
-                  <div key={plataforma.id}>
-                    {plataforma.nombre_pla}
-                  </div>
-                ))}
-              </div>}
-
+              plataforma={dato.plataformas.map((plataforma) => plataforma.nombre_pla)}
               ubicacion={<div>
                 {dato.ubicaciones.map((ubi) => (
                   <div key={ubi.id}>
