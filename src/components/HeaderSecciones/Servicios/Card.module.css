@@ -78,8 +78,6 @@
 
 
 img {
-  width: 92%;
-  max-height: 10vw;
   object-fit: cover;
   border-radius: 9px;
   margin: auto;

@@ -13,15 +13,15 @@ const Card = ({ titulo, fecha, enlaceI, enlaceC, imagen, descripcion, participan
 
   const addImagen = ({ nombrePlataforma }) => {
     if (nombrePlataforma == 'YouTube') {
-      return <img src={youtube} alt="Logo de la plataforma" />
+      return <img src={youtube} alt="Logo de la plataforma" className='plataforma-imagen' />
     } else if (nombrePlataforma == 'Meet') {
-      return <img src={meet} alt="Logo de la plataforma" />
+      return <img src={meet} alt="Logo de la plataforma" className='plataforma-imagen' />
     } else if (nombrePlataforma == 'Zoom') {
-      return <img src={Zoom} alt="Logo de la plataforma" />
+      return <img src={Zoom} alt="Logo de la plataforma" className='plataforma-imagen' />
     } else if (nombrePlataforma == 'Discord') {
-      return <img src={discord} alt="Logo de la plataforma" />
+      return <img src={discord} alt="Logo de la plataforma" className='plataforma-imagen' />
     } else {
-      return <img src={skype} alt='Logo de la plataforma' />
+      return <img src={skype} alt='Logo de la plataforma' className='plataforma-imagen' />
     }
   }
 
@@ -43,10 +43,10 @@ const Card = ({ titulo, fecha, enlaceI, enlaceC, imagen, descripcion, participan
             <div className="card-enlace">
               <div className='card-subtitulo'>Enlaces:</div>
               <i className="bi bi-link-45deg" style={{ fontSize: '14px', marginRight: '4px', color: 'red ' }}></i>
-              <a href={enlaceI} target="_blank" rel="noopener noreferrer">{enlaceI}</a>
+              <a href={enlaceI} target="_blank" rel="noopener noreferrer"> Link</a>
               <br />
               <i className="bi bi-whatsapp" style={{ fontSize: '14px', marginRight: '4px', color: '#25d366' }}></i>
-              <a href={enlaceC} target="_blank" rel="noopener noreferrer"> {enlaceC}</a>
+              <a href={enlaceC} target="_blank" rel="noopener noreferrer"> whatsapp</a>
             </div>
           )}
           <div className="card-text"><div className='card-subtitulo'>Tipo de Eventos:</div> <div className='card-texto-centrar'>{tipo}</div></div>
@@ -64,18 +64,20 @@ const Card = ({ titulo, fecha, enlaceI, enlaceC, imagen, descripcion, participan
             <div className="card-text">
               <div className='card-subtitulo'>Plataformas:</div>
               <div className='card-texto-centrar'>
-                <div style={{ position: 'relative' }}>
+
+                <div style={{ display: 'flex' }}>
                   {plataforma &&
                     plataforma.map((nombrePlataforma, index) => (
-                      <div key={index}>
+                      <div key={index} style={{ width: '50%', margin: '1px' }}>
                         <div>
-                          <div className="card-image">
-                            {addImagen({ nombrePlataforma })}
-                          </div>
+                          {addImagen({ nombrePlataforma })}
                         </div>
                       </div>
                     ))}
                 </div>
+
+
+
               </div>
             </div>
           )}

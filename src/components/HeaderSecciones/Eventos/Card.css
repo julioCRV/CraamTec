@@ -1,5 +1,6 @@
 /* Agrega estos estilos a tu archivo CSS o componente de estilo */
 .card {
+  /* Otros estilos de la tarjeta si es necesario */
   position: relative;
   margin-bottom: 20px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
@@ -12,7 +13,7 @@
 
 .deslizante {
   width: auto;
-  height: 400px;
+  height: 420px;
   overflow-y: auto;
 
   &::-webkit-scrollbar {
@@ -40,10 +41,13 @@
 }
 
 .card-imagen {
-  width: 300px;
-  height: 500px;
-  border-radius: 0;
+  margin-top: 2px;
+  width: 98%;
+  height: auto;
+  border-radius: 10px;
+
 }
+
 
 .card-titulo {
   font-family: 'Righteous', sans-serif;
@@ -74,12 +78,12 @@
 }
 
 .card-texto-centrar {
-  margin-left: 45px;
+  text-align: center;
 }
 
 .card-enlace {
   color: #000000;
-  text-align: left;
+  text-align: center;
   font-size: 0.7rem;
 }
 
@@ -87,20 +91,25 @@
   color: #000000;
 }
 
-.card-image img {
-  margin-left: 2px;
-  width: auto;
-  height: 24px;
-  margin-bottom: 2px;
-  object-fit: cover;
-  /* Ajusta según tus necesidades */
-}
 
 .card-subtitulo{
-
+  text-align: center;
   font-family: 'Righteous', sans-serif;
   color: #00ffcc;
   /* text-transform: uppercase; */
   font-size: 0.7rem;
   margin: 0;
 }
+
+.plataforma-imagen {
+  width: 18px;
+  height: auto;
+  text-align: center;
+  margin: auto;
+  transition: transform 0.3s; /* Agrega una transición suave al zoom */
+}
+
+.plataforma-imagen:hover {
+  transform: scale(2); /* Ajusta el valor según el nivel de zoom deseado */
+}
+

@@ -36,14 +36,16 @@ function Eventos() {
               tipo={dato.tipo_evento_eve}
 
               plataforma={dato.plataformas.map((plataforma) => plataforma.nombre_pla)}
-              ubicacion={<div>
-                {dato.ubicaciones.map((ubi) => (
-                  <div key={ubi.id}>
-                    {ubi.nombre_ubi}
-                    {/* {ubi.direccion_ubi} */}
-                  </div>
-                ))}
-              </div>}
+
+              ubicacion={dato.ubicaciones.map((ubi) => ubi.nombre_ubi)}
+              // ubicacion={<div>
+              //   {dato.ubicaciones.map((ubi) => (
+              //     <div key={ubi.id}>
+              //       {ubi.nombre_ubi}
+              //       {/* {ubi.direccion_ubi} */}
+              //     </div>
+              //   ))}
+              // </div>}
             />
           </div>
         ))}
