@@ -45,13 +45,17 @@
   border-radius: 0;
 }
 
-.card-title {
-  font-size: 1rem;
+.card-titulo {
+  font-family: 'Righteous', sans-serif;
+  color: #00ffcc;
+  /* text-transform: uppercase; */
+  font-size: 1.2rem;
+  margin: 0;
   margin-bottom: 0.5rem;
 }
 
 .card-text {
-  color: #000000;
+  color: #ffffff;
   font-size: 0.7rem;
   text-align: left;
 }
@@ -59,10 +63,12 @@
 .card-descripcion {
   font-size: 0.7rem;
   text-align: justify;
+  color: #ffffff;
+  margin-bottom: 10px;
 }
 
 .card-fecha {
-  color: #000000;
+  color: #ffffff;
   text-align: left;
   font-size: 0.7rem;
 }
@@ -88,4 +94,13 @@
   margin-bottom: 2px;
   object-fit: cover;
   /* Ajusta según tus necesidades */
+}
+
+.card-subtitulo{
+
+  font-family: 'Righteous', sans-serif;
+  color: #00ffcc;
+  /* text-transform: uppercase; */
+  font-size: 0.7rem;
+  margin: 0;
 }

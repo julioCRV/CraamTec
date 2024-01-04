@@ -24,23 +24,24 @@ const Card = ({ titulo, fecha, enlaceI, enlaceC, imagen, descripcion, participan
       return <img src={skype} alt='Logo de la plataforma' />
     }
   }
+  
   return (
     <div className="card">
       <div  className="deslizante">
         <img src={imagen} className="card-imagen" alt={titulo} />
         <div className="card-body">
-          <h6 className="card-title">{titulo}</h6>
+          <div className="card-titulo">{titulo}</div>
           <div className="card-descripcion">{descripcion}</div>
+          
           <div className="card-fecha">
-            Fecha: <br />
+            <div className='card-subtitulo'>Fecha:</div>
             <div className='card-texto-centrar'>
               <i className="bi bi-calendar-check" style={{ fontSize: '14px', marginRight: '4px', color: '#007bff' }}></i> {fecha}
             </div>
           </div>
           {(getFecha <= fecha) && (
             <div className="card-enlace">
-              Enlaces:
-              <br />
+              <div className='card-subtitulo'>Enlaces:</div>
               <i className="bi bi-link-45deg" style={{ fontSize: '14px', marginRight: '4px', color: 'red ' }}></i>
               <a href={enlaceI} target="_blank" rel="noopener noreferrer">{enlaceI}</a>
               <br />
@@ -48,13 +49,13 @@ const Card = ({ titulo, fecha, enlaceI, enlaceC, imagen, descripcion, participan
               <a href={enlaceC} target="_blank" rel="noopener noreferrer"> {enlaceC}</a>
             </div>
           )}
-          <div className="card-text">Tipo de Evento: <div className='card-texto-centrar'>{tipo}</div></div>
-          <div className="card-text">Modalidad: <div className='card-texto-centrar'>{modalidad}</div></div>
+          <div className="card-text"><div className='card-subtitulo'>Tipo de Eventos:</div> <div className='card-texto-centrar'>{tipo}</div></div>
+          <div className="card-text"><div className='card-subtitulo'>Modalidad:</div> <div className='card-texto-centrar'>{modalidad}</div></div>
           {modalidad === 'Presencial' ? (
-            <div className="card-text">Ubicación: <a href={ubicacion} target="_blank" rel="noopener noreferrer"> {enlaceC}</a> </div>
+            <div className="card-text"><div className='card-subtitulo'>Ubicación:</div> <a href={ubicacion} target="_blank" rel="noopener noreferrer"> {enlaceC}</a> </div>
           ) : (
             <div className="card-text">
-              Plataformas:
+              <div className='card-subtitulo'>Plataformas:</div>
               <div className='card-texto-centrar'>
                 <div style={{ position: 'relative' }}>
                   {plataforma &&
@@ -72,7 +73,7 @@ const Card = ({ titulo, fecha, enlaceI, enlaceC, imagen, descripcion, participan
             </div>
           )}
           {(getFecha > fecha) &&
-            <div className="card-text">Participantes: <div className='card-texto-centrar'>{participantes}</div></div>
+            <div className="card-text"><div className='card-subtitulo'>Participantes:</div> <div className='card-texto-centrar'>{participantes}</div></div>
           }
         </div>
       </div>

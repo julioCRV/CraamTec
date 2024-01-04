@@ -12,7 +12,7 @@ function Card({ imagen, titulo, descripcion, trabajos, celular }) {
           <div className={Styles.deslizantee}>
           
             <h2>{titulo}</h2>
-            <p>{descripcion}</p>
+            <div className={Styles.descripcion}>{descripcion}</div>
             <h3>Trabajos</h3>
             <div className={Styles.textdescripcion}>{trabajos}</div>
           </div>

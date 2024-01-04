@@ -37,7 +37,7 @@ function Competencias() {
 
                 <div className="col-md-8">
                   <div className="card-body">
-                    <h5 className="card-title">{evento.nombre_par}</h5>
+                    <h5 className="card-titulo">{evento.nombre_par}</h5>
                     <p className="card-text">
                       <strong>Tipo de Evento:</strong>{' '}
                       {evento.tipo_participacion}
