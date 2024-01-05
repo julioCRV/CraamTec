@@ -32,14 +32,14 @@ const Card = ({ titulo, fecha, enlaceI, enlaceC, imagen, descripcion, participan
           <div className="card-descripcion">{descripcion}</div>
 
           <div className="card-fecha">
-            <div className='card-subtitulo'>Fecha:</div>
+            <div className='card-subtitulo'>Fecha</div>
             <div className='card-texto-centrar'>
               <i className="bi bi-calendar-check" style={{ fontSize: '14px', marginRight: '4px', color: '#007bff' }}></i> {fecha}
             </div>
           </div>
           {(getFecha <= fecha) && (
             <div className="card-enlace">
-              <div className='card-subtitulo'>Enlaces:</div>
+              <div className='card-subtitulo'>Enlaces</div>
               <i className="bi bi-link-45deg" style={{ fontSize: '14px', marginRight: '4px', color: 'red ' }}></i>
               <a href={enlaceI} target="_blank" rel="noopener noreferrer"> Link</a>
               <br />
@@ -47,20 +47,18 @@ const Card = ({ titulo, fecha, enlaceI, enlaceC, imagen, descripcion, participan
               <a href={enlaceC} target="_blank" rel="noopener noreferrer"> whatsapp</a>
             </div>
           )}
-          <div className="card-text"><div className='card-subtitulo'>Tipo de Eventos:</div> <div className='card-texto-centrar'>{tipo}</div></div>
-          <div className="card-text"><div className='card-subtitulo'>Modalidad:</div> <div className='card-texto-centrar'>{modalidad}</div></div>
+          <div className="card-text"><div className='card-subtitulo'>Tipo de Eventos</div> <div className='card-texto-centrar'>{tipo}</div></div>
+          <div className="card-text"><div className='card-subtitulo'>Modalidad</div> <div className='card-texto-centrar'>{modalidad}</div></div>
 
           {modalidad === 'Presencial' ? (
             <div className="card-enlace">
-              <div className='card-subtitulo'>Ubicación:</div>
-
-
+              <div className='card-subtitulo'>Ubicación</div>
               <i className="bi bi-link-45deg" style={{ fontSize: '14px', marginRight: '4px', color: 'red ' }}></i>
               <a href={ubicacion} target="_blank" rel="noopener noreferrer">{ubicacion}</a>
             </div>
           ) : (
             <div className="card-text">
-              <div className='card-subtitulo'>Plataformas:</div>
+              <div className='card-subtitulo'>Plataformas</div>
               <div className='card-texto-centrar'>
 
               <div style={{ display: 'flex', justifyContent: 'center', padding: '5px' }}>
@@ -80,7 +78,7 @@ const Card = ({ titulo, fecha, enlaceI, enlaceC, imagen, descripcion, participan
           )}
           {(getFecha > fecha) &&
             <div className="card-text">
-              <div className='card-subtitulo'>Participantes:</div>
+              <div className='card-subtitulo'>Participantes</div>
               <div className='card-texto-centrar'>{participantes}</div>
             </div>
           }
