@@ -39,6 +39,7 @@ function Eventos() {
                 plataforma={dato.plataformas.map((plataforma) => plataforma.nombre_pla)}
 
                 ubicacion={dato.ubicaciones.map((ubi) => ubi.nombre_ubi)}
+                
               // ubicacion={<div>
               //   {dato.ubicaciones.map((ubi) => (
               //     <div key={ubi.id}>
