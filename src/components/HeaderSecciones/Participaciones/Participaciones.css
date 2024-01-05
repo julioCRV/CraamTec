@@ -1,14 +1,45 @@
-.card-subtitulo2{
+.card-subtitulo2 {
     text-align: left;
     font-family: 'Righteous', sans-serif;
     color: #00ffcc;
     /* text-transform: uppercase; */
     font-size: 0.7rem;
     margin: 0;
-  }
+}
 
-  .card-fecha2 {
+.card-fecha2 {
     color: #ffffff;
     text-align: center;
     font-size: 0.7rem;
+}
+
+.imagen-pequena {
+    margin-top: 15px;
+    margin-left: 15px;
+    margin-right: 150px;
+    max-width: auto;
+    height: 90%;
+}
+.card-body-con-margen{
+    margin-left: 15px;
+}
+.deslizante-participaciones {
+    width: auto;
+    height: 90px;
+    overflow-y: auto;
+  
+    &::-webkit-scrollbar {
+      width: 0.5px;
+    }
+  
+    &::-webkit-scrollbar-thumb {
+      background-color: transparent; 
+    }
+  
+    &::-webkit-scrollbar-track {
+      background-color: transparent; 
+    }
+  
+    scrollbar-width: thin;
+    scrollbar-color: transparent transparent;
   }

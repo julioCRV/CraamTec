@@ -5,10 +5,16 @@ import meet from '../../../assets/meet.png';
 import youtube from '../../../assets/youtube.png';
 import Zoom from '../../../assets/zoom.png';
 
+import fechaimg from '../../../assets/fecha.png';
+import maps from '../../../assets/ubicacion.png';
+import whatsapp from '../../../assets/whatsapp.png';
+import registro from '../../../assets/registro2.png';
+
 const Card = ({ titulo, fecha, enlaceI, enlaceC, imagen, descripcion, participantes, modalidad, tipo, plataforma, ubicacion }) => {
 
+  // plataforma = ['YouTube', 'Meet', 'Zoom', 'Discord'];
   const [getFecha, setFecha] = useState(new Date().toISOString().split('T')[0]);
-  
+
   const addImagen = ({ nombrePlataforma }) => {
     if (nombrePlataforma == 'YouTube') {
       return <img src={youtube} alt="Logo de la plataforma" className='plataforma-imagen' />
@@ -31,49 +37,56 @@ const Card = ({ titulo, fecha, enlaceI, enlaceC, imagen, descripcion, participan
           <div className="card-titulo">{titulo}</div>
           <div className="card-descripcion">{descripcion}</div>
 
-          <div className="card-fecha">
-            <div className='card-subtitulo'>Fecha</div>
-            <div className='card-texto-centrar'>
-              <i className="bi bi-calendar-check" style={{ fontSize: '14px', marginRight: '4px', color: '#007bff' }}></i> {fecha}
+          <div className="card-fecha text-center">
+            <div className='card-subtitulo '>Fecha</div>
+            <div className='d-flex align-items-center justify-content-center'>
+              <img src={fechaimg} alt="Logo de enlace" title="" className='plataforma-img-fecha' />
+              <span className="ml-2">{fecha}</span>
             </div>
           </div>
+
           {(getFecha <= fecha) && (
-            <div className="card-enlace">
-              <div className='card-subtitulo'>Enlaces</div>
-              <i className="bi bi-link-45deg" style={{ fontSize: '14px', marginRight: '4px', color: 'red ' }}></i>
-              <a href={enlaceI} target="_blank" rel="noopener noreferrer"> Link</a>
-              <br />
-              <i className="bi bi-whatsapp" style={{ fontSize: '14px', marginRight: '4px', color: '#25d366' }}></i>
-              <a href={enlaceC} target="_blank" rel="noopener noreferrer"> whatsapp</a>
+            <div className="card-enlace d-flex flex-column align-items-center">
+              <div className='card-subtitulo mb-2'>Enlaces</div>
+
+              <div className="d-flex justify-content-between">
+                {/* Enlace 1 */}
+                <a href={enlaceI} target="_blank" rel="noopener noreferrer" className="mr-2">
+                  <img src={registro} alt="Logo de enlace" title="Registro en línea" className='plataforma-enlace' />
+                </a>
+
+                {/* Enlace 2 */}
+                <a href={enlaceC} target="_blank" rel="noopener noreferrer" className="ml-2">
+                  <img src={whatsapp} alt="Logo de enlace" title="Grupo de Whatsapp" className='plataforma-enlace' />
+                </a>
+              </div>
             </div>
+
           )}
-          <div className="card-text"><div className='card-subtitulo'>Tipo de Eventos</div> <div className='card-texto-centrar'>{tipo}</div></div>
+          <div className="card-text"><div className='card-subtitulo'>Tipo de Evento</div> <div className='card-texto-centrar'>{tipo}</div></div>
           <div className="card-text"><div className='card-subtitulo'>Modalidad</div> <div className='card-texto-centrar'>{modalidad}</div></div>
 
           {modalidad === 'Presencial' ? (
-            <div className="card-enlace">
-              <div className='card-subtitulo'>Ubicación</div>
-              <i className="bi bi-link-45deg" style={{ fontSize: '14px', marginRight: '4px', color: 'red ' }}></i>
-              <a href={ubicacion} target="_blank" rel="noopener noreferrer">{ubicacion}</a>
+            <div className="card-enlace text-center">
+              <div className='card-subtitulo mb-2'>Ubicación</div>
+              <a href={ubicacion} target="_blank" rel="noopener noreferrer">
+                <img src={maps} alt="Logo de enlace" title="" className='card-ubicacion' />
+              </a>
             </div>
+
           ) : (
             <div className="card-text">
               <div className='card-subtitulo'>Plataformas</div>
-              <div className='card-texto-centrar'>
 
-              <div style={{ display: 'flex', justifyContent: 'center', padding: '5px' }}>
-  {plataforma &&
-    plataforma.map((nombrePlataforma, index) => (
-      <div key={index} style={{ width: '50%' }}>
-        {addImagen({ nombrePlataforma })}
-      </div>
-    ))}
-</div>
-
-
-
-
+              <div style={{ display: 'flex', justifyContent: 'center' }}>
+                {plataforma &&
+                  plataforma.map((nombrePlataforma, index) => (
+                    <div key={index} style={{ width: '50%' }}>
+                      {addImagen({ nombrePlataforma })}
+                    </div>
+                  ))}
               </div>
+
             </div>
           )}
           {(getFecha > fecha) &&

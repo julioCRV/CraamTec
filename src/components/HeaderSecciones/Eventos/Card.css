@@ -21,11 +21,11 @@
   }
 
   &::-webkit-scrollbar-thumb {
-    background-color: transparent; 
+    background-color: transparent;
   }
 
   &::-webkit-scrollbar-track {
-    background-color: transparent; 
+    background-color: transparent;
   }
 
   scrollbar-width: thin;
@@ -92,7 +92,7 @@
 }
 
 
-.card-subtitulo{
+.card-subtitulo {
   text-align: center;
   font-family: 'Righteous', sans-serif;
   color: #00ffcc;
@@ -101,15 +101,52 @@
   margin: 0;
 }
 
+.card-ubicacion{
+  width: 30px;
+  height: auto;
+  transition: transform 0.3s, color 0.3s;
+  margin-bottom: 10px;
+}
+
 .plataforma-imagen {
   width: 30px;
   height: auto;
   text-align: center;
   margin: auto;
-  transition: transform 0.3s; /* Agrega una transición suave al zoom */
+  transition: transform 0.3s;
+  /* Agrega una transición suave al zoom */
 }
+
+.plataforma-img-fecha {
+  margin: 0 10px;
+  width: 20px;
+
+  transition: transform 0.3s, color 0.3s;
+
+}
+
+.plataforma-card-imagen {
+  width: 100px;
+}
+
+
+.plataforma-enlace {
+  margin: 0 10px;
+  width: 30px;
+  height: auto;
+  transition: transform 0.3s, color 0.3s;
+  margin-bottom: 10px;
+}
+
+.plataforma-enlace:hover {
+  transform: scale(1.5);
+}
+
 
 .plataforma-imagen:hover {
-  transform: scale(2); /* Ajusta el valor según el nivel de zoom deseado */
+  transform: scale(1.5);
 }
 
+.card-ubicacion:hover {
+  transform: scale(1.5);
+}
