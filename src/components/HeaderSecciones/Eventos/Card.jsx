@@ -1,11 +1,9 @@
 import React, { useState } from 'react';
 import './Card.css'
-import discord from '../../../assets/discort.png';
+import discord from '../../../assets/discord.png';
 import meet from '../../../assets/meet.png';
 import youtube from '../../../assets/youtube.png';
 import Zoom from '../../../assets/zoom.png';
-import skype from '../../../assets/skype.png';
-
 
 const Card = ({ titulo, fecha, enlaceI, enlaceC, imagen, descripcion, participantes, modalidad, tipo, plataforma, ubicacion }) => {
 
@@ -21,7 +19,7 @@ const Card = ({ titulo, fecha, enlaceI, enlaceC, imagen, descripcion, participan
     } else if (nombrePlataforma == 'Discord') {
       return <img src={discord} alt="Logo de la plataforma" className='plataforma-imagen' />
     } else {
-      return <img src={skype} alt='Logo de la plataforma' className='plataforma-imagen' />
+      return "";
     }
   }
 

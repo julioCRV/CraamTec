@@ -1,0 +1,14 @@
+.card-subtitulo2{
+    text-align: left;
+    font-family: 'Righteous', sans-serif;
+    color: #00ffcc;
+    /* text-transform: uppercase; */
+    font-size: 0.7rem;
+    margin: 0;
+  }
+
+  .card-fecha2 {
+    color: #ffffff;
+    text-align: center;
+    font-size: 0.7rem;
+  }

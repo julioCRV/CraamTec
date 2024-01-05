@@ -39,13 +39,12 @@ function Competencias() {
                   <div className="card-body">
                     <h5 className="card-titulo">{evento.nombre_par}</h5>
                     <p className="card-text">
-                      <strong>Tipo de Evento:</strong>{' '}
-                      {evento.tipo_participacion}
+                      <span className='card-subtitulo'>Tipo de Evento:</span> {evento.tipo_participacion}
                     </p>
-                    <hr />
+                    <hr style={{color: 'white'}}/>
                     <p className="card-text">{evento.descripcion_par}</p>
                     <p className="card-text">
-                      <small className="text-muted">{evento.fecha_par}</small>
+                      <div className="card-fecha2">{evento.fecha_par}</div>
                     </p>
                   </div>
                 </div>
