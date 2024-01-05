@@ -9,7 +9,9 @@ function App() {
   return (
     <Router>
       <div className='App'>
-        
+        <Routes>
+          <Route path="/" element={<Navigate to="/inicio" replace />} />
+        </Routes>
         <Header />
         <Footer />
       </div>
