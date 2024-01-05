@@ -21,7 +21,6 @@ function Card({ imagen, titulo, descripcion, trabajos, celular }) {
             <a href={celular} target="_blank" rel="noopener noreferrer">
               <Button className="custom-button">
                 <span>Contactanos</span>
-                <i></i>
               </Button>
             </a>
           </div>

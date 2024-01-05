@@ -4,8 +4,18 @@
     justify-content: center;
     align-items: center;
     height: 70vh;
-    margin-top: 10%;
-    margin-bottom: 10%;
+    margin-top: 7%;
+    margin-bottom: 7%;
   }
 
-  
+  @media (min-width:320px) and (max-width: 359px) {
+    .Servicios {
+      height: 60vh;
+    }
+  }
+
+  @media (min-width:360px) and (max-width: 720px) {
+    .Servicios {
+      height: 70vh;
+    }
+  }
