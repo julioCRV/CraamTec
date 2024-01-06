@@ -7,16 +7,23 @@ function Eventos() {
 
   const fetchData = async () => {
     try {
-      const response = await axios.get('https://craamtec-web.onrender.com/events/api/events/totalEventos/');
-      setDatos(response.data);
+      const response = await fetch('https://craamtec-web.onrender.com/events/api/events/totalEventos/');
+      
+      if (!response.ok) {
+        throw new Error(`HTTP error! Status: ${response.status}`);
+      }
+  
+      const data = await response.json();
+      setDatos(data);
     } catch (error) {
       console.error('Error al obtener los datos: ', error);
     }
   };
-
+  
   useEffect(() => {
     fetchData();
   }, []);
+  
 
 
   return (
