@@ -3,7 +3,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import './Header.css';
 import { Navbar, Nav, Container } from 'react-bootstrap';
 import { NavLink } from 'react-router-dom';
-import logoImage from '../../assets/logo-CraamTEc.png';
+// import logoImage from '../../assets/logo-CraamTec.png';
 
 
 
