@@ -3,7 +3,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import './Header.css';
 import { Navbar, Nav, Container } from 'react-bootstrap';
 import { NavLink } from 'react-router-dom';
-// import logoImage from '../../assets/logo-CraamTec.png';
+import logoImage from '../../assets/craamtec.svg';
 
 
 
@@ -15,15 +15,16 @@ function App() {
     <div className="header-container">
       <Navbar expand="lg" bg="dark" variant="light" sticky="top" >
         <Container>
-          {/* <Navbar.Brand >
+          <Navbar.Brand >
             <img
               src={logoImage}
               className="d-inline-block align-top"
               alt="Tu Logo"
               loading="lazy"
+              style={{ maxWidth: '60%', height: 'auto' }} // Asegura que la imagen sea responsive
             />
 
-          </Navbar.Brand> */}
+          </Navbar.Brand>
           <Navbar.Toggle aria-controls="navbarNav" />
           <Navbar.Collapse id="navbarNav">
             <Nav className="ml-auto">

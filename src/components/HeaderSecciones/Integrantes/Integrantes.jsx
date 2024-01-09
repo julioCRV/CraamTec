@@ -31,8 +31,8 @@ function Integrantes() {
                 {/* Your card content here */}
                 <div className="card-body">
                     <img
-                      src={Logo}
-                      // src={`https://drive.google.com/uc?id=${integrante.foto_int}`}
+                      // src={Logo}
+                      src={`https://drive.google.com/uc?id=${integrante.foto_int}`}
                       alt="Imagen Circular"     className="imagen-estilo"             
                     />
                   <h5 className="card-title">{integrante.nombres_int}</h5>

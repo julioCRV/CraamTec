@@ -26,7 +26,7 @@ function Servicios() {
       {datos.length > 0 ? (
         <Carousel
           cards={datos.map((dato) => ({
-            key: uuidv4(),
+            key: datos.id,
             content: <Card imagen={`https://drive.google.com/uc?id=${dato.imagen_ser}`}
               titulo={dato.nombre_ser}
               descripcion={dato.descripcion_ser}

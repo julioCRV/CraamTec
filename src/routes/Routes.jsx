@@ -1,4 +1,4 @@
-import {Routes, Route} from 'react-router-dom';
+import {Routes, Route, Navigate} from 'react-router-dom';
 
 import Inicio from '../components/HeaderSecciones/Inicio/Inicio';
 import Eventos from '../components/HeaderSecciones/Eventos/Eventos';
@@ -10,6 +10,7 @@ import Servicios from '../components/HeaderSecciones/Servicios/Servicios';
 function Router() {
     return (
         <Routes>
+            <Route path="/" element={<Navigate to="/inicio" />} />
             <Route path='/inicio' element={<Inicio/>}/>
             <Route path='/eventos' element={<Eventos/>}/>
             <Route path='/participaciones' element={<Participaciones/>}/>

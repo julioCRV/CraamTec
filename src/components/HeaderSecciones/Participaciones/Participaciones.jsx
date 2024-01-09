@@ -44,9 +44,8 @@ function Competencias() {
                     <div className="deslizante-participaciones">
                       <p className="card-text">{evento.descripcion_par}</p>
                     </div>
-                    <p className="card-text">
-                      <div className="card-fecha2">{evento.fecha_par}</div>
-                    </p>
+                    <p className="card-text"></p>
+                    <div className="card-fecha2">{evento.fecha_par}</div>
                   </div>
                 </div>
               </div>
